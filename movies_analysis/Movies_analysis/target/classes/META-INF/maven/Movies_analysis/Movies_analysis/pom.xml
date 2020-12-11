@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Movies_analysis</groupId>
+  <artifactId>Movies_analysis</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.41</version>
+		</dependency>
+	<!--下面是Hadoop相关依赖-->
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-common -->
+       <dependency>
+           <groupId>org.apache.hadoop</groupId>
+           <artifactId>hadoop-common</artifactId>
+           <version>2.6.0</version>
+       </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-hdfs -->
+		<dependency>
+		    <groupId>org.apache.hadoop</groupId>
+		    <artifactId>hadoop-hdfs</artifactId>
+		    <version>2.6.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-client -->
+		<dependency>
+		    <groupId>org.apache.hadoop</groupId>
+		    <artifactId>hadoop-client</artifactId>
+		    <version>2.6.0</version>
+		</dependency>
+  
+   <dependency>  
+	    <groupId>jdk.tools</groupId>  
+	    <artifactId>jdk.tools</artifactId>  
+	    <version>1.7.0_80</version>  
+	    <scope>system</scope>  
+	    <systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>  
+	</dependency> 
+  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
